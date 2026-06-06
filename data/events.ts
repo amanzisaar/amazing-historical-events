@@ -374,5 +374,215 @@ export const events: HistoricalEvent[] = [
 
   heroImage: "/images/world-war-2.png"
 },
+{
+  id: 9,
+  slug: "mongol-conquests",
+  title: "Mongol Conquests",
+  continent: "Asia",
+  country: "Mongol Empire",
+  year: 1206,
+  category: "War",
 
+  summary:
+    "The military campaigns that created the largest contiguous land empire in history.",
+
+  story:
+    "Genghis Khan united the Mongol tribes and launched a series of conquests that stretched from China to Eastern Europe. Mongol armies used speed, discipline, and psychological warfare to defeat larger forces.",
+
+  causes: [
+    "Tribal unification",
+    "Need for expansion",
+    "Military innovation"
+  ],
+
+  consequences: [
+    "Creation of the Mongol Empire",
+    "Expansion of trade",
+    "Cultural exchange"
+  ],
+
+  keyFigures: [
+    "Genghis Khan",
+    "Kublai Khan"
+  ],
+
+  significance:
+    "Connected Europe and Asia through trade and conquest.",
+
+  interestingFacts: [
+    "The Mongol Empire became the largest contiguous empire in history.",
+    "Messages could travel rapidly through a relay system."
+  ],
+
+  heroImage: "/images/mongol-conquests.png"
+},
+{
+  id: 10,
+  slug: "meiji-restoration",
+  title: "Meiji Restoration",
+  continent: "Asia",
+  country: "Japan",
+  year: 1868,
+  category: "Political",
+
+  summary:
+    "The transformation of Japan into a modern industrial state.",
+
+  story:
+    "The Meiji government ended feudal rule and rapidly modernized Japan through industrialization, military reforms, and education.",
+
+  causes: [
+    "Western pressure",
+    "Weak Tokugawa rule",
+    "Need for modernization"
+  ],
+
+  consequences: [
+    "Industrial growth",
+    "Modern military",
+    "Economic transformation"
+  ],
+
+  keyFigures: [
+    "Emperor Meiji",
+    "Saigo Takamori"
+  ],
+
+  significance:
+    "Laid the foundation of modern Japan.",
+
+  interestingFacts: [
+    "The samurai class lost many traditional privileges.",
+    "Japan industrialized in only a few decades."
+  ],
+
+  heroImage: "/images/meiji-restoration.png"
+},
+{
+  id: 11,
+  slug: "partition-of-india",
+  title: "Partition of India",
+  continent: "Asia",
+  country: "India",
+  year: 1947,
+  category: "Political",
+
+  summary:
+    "The division of British India into India and Pakistan.",
+
+  story:
+    "As British rule ended, India was partitioned into two independent states. Massive migrations and communal violence followed.",
+
+  causes: [
+    "Religious tensions",
+    "British withdrawal",
+    "Political disagreements"
+  ],
+
+  consequences: [
+    "Mass migration",
+    "Creation of India and Pakistan",
+    "Long-term regional tensions"
+  ],
+
+  keyFigures: [
+    "Mahatma Gandhi",
+    "Jawaharlal Nehru",
+    "Muhammad Ali Jinnah"
+  ],
+
+  significance:
+    "One of the largest population movements in history.",
+
+  interestingFacts: [
+    "More than 10 million people migrated.",
+    "The partition occurred in the same year as independence."
+  ],
+
+  heroImage: "/images/partition-of-india.png"
+},
+{
+  id: 12,
+  slug: "opium-wars",
+  title: "Opium Wars",
+  continent: "Asia",
+  country: "China",
+  year: 1839,
+  category: "War",
+
+  summary:
+    "Conflicts between China and Britain over trade and opium.",
+
+  story:
+    "Britain's opium trade in China led to conflict with the Qing government. The wars exposed China's military weakness and increased foreign influence.",
+
+  causes: [
+    "Opium trade",
+    "Trade disputes",
+    "Imperial ambitions"
+  ],
+
+  consequences: [
+    "Unequal treaties",
+    "Loss of Hong Kong",
+    "Foreign influence in China"
+  ],
+
+  keyFigures: [
+    "Lin Zexu",
+    "Queen Victoria"
+  ],
+
+  significance:
+    "Marked the beginning of China's 'Century of Humiliation'.",
+
+  interestingFacts: [
+    "Hong Kong was ceded to Britain.",
+    "The wars changed East Asian politics."
+  ],
+
+  heroImage: "/images/opium-wars.png"
+},
+{
+  id: 13,
+  slug: "korean-war",
+  title: "Korean War",
+  continent: "Asia",
+  country: "Korea",
+  year: 1950,
+  category: "War",
+
+  summary:
+    "A Cold War conflict between North and South Korea.",
+
+  story:
+    "North Korea invaded South Korea in 1950. United Nations forces and China became involved, creating a major Cold War confrontation.",
+
+  causes: [
+    "Division of Korea",
+    "Cold War tensions",
+    "Political rivalry"
+  ],
+
+  consequences: [
+    "Millions of casualties",
+    "Continued division of Korea",
+    "Military buildup in East Asia"
+  ],
+
+  keyFigures: [
+    "Kim Il-sung",
+    "Douglas MacArthur"
+  ],
+
+  significance:
+    "One of the first major conflicts of the Cold War.",
+
+  interestingFacts: [
+    "The war technically never ended with a peace treaty.",
+    "The Demilitarized Zone still exists today."
+  ],
+
+  heroImage: "/images/korean-war.png"
+},
 ];
