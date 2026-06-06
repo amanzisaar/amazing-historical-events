@@ -5,13 +5,19 @@ import { events } from "../../data/events";
 
 export default function SearchPage() {
   const [searchTerm, setSearchTerm] = useState("");
-  const filteredEvents = events.filter(
-    (event) =>
+  const [selectedContinent, setSelectedContinent] = useState("All");
+  const filteredEvents = events.filter((event) => {
+    const matchesSearch =
       event.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
       event.country.toLowerCase().includes(searchTerm.toLowerCase()) ||
       event.continent.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      event.category.toLowerCase().includes(searchTerm.toLowerCase()),
-  );
+      event.category.toLowerCase().includes(searchTerm.toLowerCase());
+
+    const matchesContinent =
+      selectedContinent === "All" || event.continent === selectedContinent;
+
+    return matchesSearch && matchesContinent;
+  });
   return (
     <main className="min-h-screen bg-black px-6 py-12 text-white">
       <div className="mx-auto max-w-5xl">
@@ -26,6 +32,28 @@ export default function SearchPage() {
           onChange={(e) => setSearchTerm(e.target.value)}
           className="mb-10 w-full rounded-xl border border-zinc-700 bg-zinc-900 p-4 text-white outline-none"
         />
+        <div className="mb-8 flex gap-3">
+          <button
+            onClick={() => setSelectedContinent("All")}
+            className="rounded-lg bg-zinc-800 px-4 py-2"
+          >
+            All
+          </button>
+
+          <button
+            onClick={() => setSelectedContinent("Asia")}
+            className="rounded-lg bg-zinc-800 px-4 py-2"
+          >
+            Asia
+          </button>
+
+          <button
+            onClick={() => setSelectedContinent("Europe")}
+            className="rounded-lg bg-zinc-800 px-4 py-2"
+          >
+            Europe
+          </button>
+        </div>
 
         <div className="grid gap-6">
           {filteredEvents.length === 0 ? (
