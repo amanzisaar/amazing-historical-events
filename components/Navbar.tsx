@@ -1,15 +1,24 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-between px-8 py-4 border-b border-zinc-800">
-      <h1 className="text-xl font-bold">
+    <nav className="flex items-center justify-between border-b border-zinc-800 px-8 py-4">
+      <Link href="/" className="text-xl font-bold">
         Amazing Historical Events
-      </h1>
+      </Link>
 
       <div className="flex gap-6">
-        <a href="/">Home</a>
-        <a href="/timeline">Timeline</a>
-        <a href="/search">Search</a>
-        <a href="/profile">Profile</a>
+        <Link href="/">Home</Link>
+
+        <Link href="/timeline">Timeline</Link>
+
+        <Link href="/search">Search</Link>
+
+        <Link href="/categories">Categories</Link>
+
+        <Link href="/saved-events">Saved</Link>
+
+        <Link href="/profile">Profile</Link>
       </div>
     </nav>
   );
