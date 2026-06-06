@@ -1,6 +1,7 @@
 import { events } from "../../../data/events";
 import Image from "next/image";
 import SaveEventButton from "../../../components/SaveEventButton";
+import RelatedEvents from "../../../components/RelatedEvents";
 type EventPageProps = {
   params: Promise<{
     slug: string;
@@ -52,46 +53,41 @@ export default async function EventPage({ params }: EventPageProps) {
         </section>
 
         <section className="mb-10">
-  <h2 className="mb-4 text-3xl font-semibold">Story</h2>
+          <h2 className="mb-4 text-3xl font-semibold">Story</h2>
 
-  <p className="leading-8 text-zinc-300">{event.story}</p>
-</section>
+          <p className="leading-8 text-zinc-300">{event.story}</p>
+        </section>
 
-<section className="mb-10">
-  <h2 className="mb-4 text-3xl font-semibold">
-    Key Figures
-  </h2>
+        <section className="mb-10">
+          <h2 className="mb-4 text-3xl font-semibold">Key Figures</h2>
 
-  <ul className="list-disc space-y-2 pl-6 text-zinc-300">
-    {event.keyFigures.map((person) => (
-      <li key={person}>{person}</li>
-    ))}
-  </ul>
-</section>
+          <ul className="list-disc space-y-2 pl-6 text-zinc-300">
+            {event.keyFigures.map((person) => (
+              <li key={person}>{person}</li>
+            ))}
+          </ul>
+        </section>
 
-<section className="mb-10">
-  <h2 className="mb-4 text-3xl font-semibold">
-    Causes
-  </h2>
+        <section className="mb-10">
+          <h2 className="mb-4 text-3xl font-semibold">Causes</h2>
 
-  <ul className="list-disc space-y-2 pl-6 text-zinc-300">
-    {event.causes.map((cause) => (
-      <li key={cause}>{cause}</li>
-    ))}
-  </ul>
-</section>
+          <ul className="list-disc space-y-2 pl-6 text-zinc-300">
+            {event.causes.map((cause) => (
+              <li key={cause}>{cause}</li>
+            ))}
+          </ul>
+        </section>
 
-<section>
-  <h2 className="mb-4 text-3xl font-semibold">
-    Consequences
-  </h2>
+        <section>
+          <h2 className="mb-4 text-3xl font-semibold">Consequences</h2>
 
-  <ul className="list-disc space-y-2 pl-6 text-zinc-300">
-    {event.consequences.map((consequence) => (
-      <li key={consequence}>{consequence}</li>
-    ))}
-  </ul>
-</section>
+          <ul className="list-disc space-y-2 pl-6 text-zinc-300">
+            {event.consequences.map((consequence) => (
+              <li key={consequence}>{consequence}</li>
+            ))}
+          </ul>
+        </section>
+        <RelatedEvents currentSlug={event.slug} />
       </div>
     </main>
   );
