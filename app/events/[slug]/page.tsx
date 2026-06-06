@@ -59,6 +59,52 @@ export default async function EventPage({ params }: EventPageProps) {
           <p className="leading-8 text-zinc-300">{event.story}</p>
         </section>
 
+        <section className="mt-12">
+          <h2 className="mb-4 text-3xl font-semibold">Causes</h2>
+
+          <ul className="list-disc space-y-2 pl-6 text-zinc-300">
+            {event.causes.map((cause) => (
+              <li key={cause}>{cause}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="mb-4 text-3xl font-semibold">Key Figures</h2>
+
+          <ul className="list-disc space-y-2 pl-6 text-zinc-300">
+            {event.keyFigures.map((person) => (
+              <li key={person}>{person}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="mb-4 text-3xl font-semibold">Consequences</h2>
+
+          <ul className="list-disc space-y-2 pl-6 text-zinc-300">
+            {event.consequences.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="mb-4 text-3xl font-semibold">Why It Matters</h2>
+
+          <p className="leading-8 text-zinc-300">{event.significance}</p>
+        </section>
+
+        <section className="mt-12">
+          <h2 className="mb-4 text-3xl font-semibold">Interesting Facts</h2>
+
+          <ul className="list-disc space-y-2 pl-6 text-zinc-300">
+            {event.interestingFacts.map((fact) => (
+              <li key={fact}>{fact}</li>
+            ))}
+          </ul>
+        </section>
+
         <section className="mb-10">
           <h2 className="mb-4 text-3xl font-semibold">Key Figures</h2>
 
