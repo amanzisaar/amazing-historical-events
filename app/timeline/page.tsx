@@ -1,33 +1,48 @@
+import Link from "next/link";
 import { events } from "../../data/events";
 
 export default function TimelinePage() {
-  const sortedEvents = [...events].sort((a, b) => a.year - b.year);
+  const sortedEvents = [...events].sort(
+    (a, b) => a.year - b.year
+  );
 
   return (
     <main className="min-h-screen bg-black px-6 py-12 text-white">
-      <div className="mx-auto max-w-4xl">
-        <h1 className="mb-10 text-center text-5xl font-bold">
+      <div className="mx-auto max-w-5xl">
+        <h1 className="mb-12 text-center text-5xl font-bold">
           Historical Timeline
         </h1>
 
         <div className="relative">
-          <div className="absolute left-4 top-0 h-full w-1 bg-zinc-800"></div>
+          {/* Vertical Timeline Line */}
+          <div className="absolute left-5 top-0 h-full w-1 bg-zinc-800"></div>
 
-          <div className="space-y-8">
+          <div className="space-y-10">
             {sortedEvents.map((event) => (
-              <div
+              <Link
                 key={event.id}
-                className="relative ml-12 rounded-xl border border-zinc-800 bg-zinc-900 p-6"
+                href={`/events/${event.slug}`}
+                className="relative block ml-16 rounded-xl border border-zinc-800 bg-zinc-900 p-6 transition hover:border-blue-500 hover:bg-zinc-800"
               >
-                <div className="absolute -left-10 top-8 h-5 w-5 rounded-full bg-blue-500"></div>
-                <p className="text-blue-500 font-semibold">{event.year}</p>
+                {/* Timeline Dot */}
+                <div className="absolute -left-14 top-8 h-5 w-5 rounded-full bg-blue-500"></div>
 
-                <h2 className="mt-2 text-2xl font-bold">{event.title}</h2>
+                <p className="font-semibold text-blue-500">
+                  {event.year}
+                </p>
 
-                <p className="mt-2 text-zinc-400">{event.country}</p>
+                <h2 className="mt-2 text-3xl font-bold">
+                  {event.title}
+                </h2>
 
-                <p className="mt-4">{event.summary}</p>
-              </div>
+                <p className="mt-2 text-zinc-400">
+                  {event.country}
+                </p>
+
+                <p className="mt-4">
+                  {event.summary}
+                </p>
+              </Link>
             ))}
           </div>
         </div>
