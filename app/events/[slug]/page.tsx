@@ -1,6 +1,6 @@
 import { events } from "../../../data/events";
 import Image from "next/image";
-
+import SaveEventButton from "../../../components/SaveEventButton";
 type EventPageProps = {
   params: Promise<{
     slug: string;
@@ -39,6 +39,10 @@ export default async function EventPage({ params }: EventPageProps) {
 
         <div className="mt-4 inline-block rounded-full bg-blue-600 px-4 py-2 text-sm">
           {event.category}
+        </div>
+
+        <div className="mt-6">
+          <SaveEventButton eventSlug={event.slug} />
         </div>
 
         <section className="mb-10">
