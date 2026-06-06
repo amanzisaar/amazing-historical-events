@@ -2,6 +2,7 @@ import { events } from "../../../data/events";
 import Image from "next/image";
 import SaveEventButton from "../../../components/SaveEventButton";
 import RelatedEvents from "../../../components/RelatedEvents";
+import EventNavigation from "../../../components/EventNavigation";
 type EventPageProps = {
   params: Promise<{
     slug: string;
@@ -88,6 +89,7 @@ export default async function EventPage({ params }: EventPageProps) {
           </ul>
         </section>
         <RelatedEvents currentSlug={event.slug} />
+        <EventNavigation currentSlug={event.slug} />
       </div>
     </main>
   );
