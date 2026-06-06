@@ -585,4 +585,260 @@ export const events: HistoricalEvent[] = [
 
   heroImage: "/images/korean-war.png"
 },
+{
+  id: 14,
+  slug: "apollo-11-moon-landing",
+  title: "Apollo 11 Moon Landing",
+  continent: "Global",
+  country: "United States",
+  year: 1969,
+  category: "Exploration",
+
+  summary:
+    "The first successful human landing on the Moon.",
+
+  story:
+    "Apollo 11 fulfilled President Kennedy's goal of landing a man on the Moon. Neil Armstrong and Buzz Aldrin landed while Michael Collins remained in lunar orbit.",
+
+  causes: [
+    "Space Race",
+    "Cold War competition",
+    "Scientific ambition"
+  ],
+
+  consequences: [
+    "Advances in space technology",
+    "National prestige",
+    "Future space missions"
+  ],
+
+  keyFigures: [
+    "Neil Armstrong",
+    "Buzz Aldrin",
+    "Michael Collins"
+  ],
+
+  significance:
+    "One of humanity's greatest technological achievements.",
+
+  interestingFacts: [
+    "Armstrong's first step was broadcast worldwide.",
+    "Apollo 11 landed on July 20, 1969."
+  ],
+
+  heroImage: "/images/apollo-11-moon-landing.png"
+},
+{
+  id: 15,
+  slug: "cold-war",
+  title: "Cold War",
+  continent: "Global",
+  country: "United States & Soviet Union",
+  year: 1947,
+  category: "Political",
+
+  summary:
+    "A decades-long rivalry between the United States and the Soviet Union.",
+
+  story:
+    "Following World War II, the world's two superpowers competed through military alliances, espionage, economic influence, and proxy wars.",
+
+  causes: [
+    "Ideological differences",
+    "Post-war tensions",
+    "Power competition"
+  ],
+
+  consequences: [
+    "Nuclear arms race",
+    "Space Race",
+    "Proxy wars"
+  ],
+
+  keyFigures: [
+    "Joseph Stalin",
+    "Harry Truman",
+    "Ronald Reagan"
+  ],
+
+  significance:
+    "Defined global politics for nearly half a century.",
+
+  interestingFacts: [
+    "The superpowers never fought directly.",
+    "The conflict lasted over 40 years."
+  ],
+
+  heroImage: "/images/cold-war.png"
+},
+{
+  id: 16,
+  slug: "cuban-missile-crisis",
+  title: "Cuban Missile Crisis",
+  continent: "North America",
+  country: "Cuba",
+  year: 1962,
+  category: "Political",
+
+  summary:
+    "The closest the world came to nuclear war.",
+
+  story:
+    "The Soviet Union secretly deployed nuclear missiles to Cuba. The United States responded with a naval blockade, leading to a tense standoff.",
+
+  causes: [
+    "Cold War tensions",
+    "Nuclear competition",
+    "Cuban alliance with USSR"
+  ],
+
+  consequences: [
+    "Removal of missiles",
+    "Improved communication channels",
+    "Reduced nuclear tensions"
+  ],
+
+  keyFigures: [
+    "John F. Kennedy",
+    "Nikita Khrushchev",
+    "Fidel Castro"
+  ],
+
+  significance:
+    "Prevented a potential nuclear conflict.",
+
+  interestingFacts: [
+    "The crisis lasted 13 days.",
+    "Many historians consider it the most dangerous moment of the Cold War."
+  ],
+
+  heroImage: "/images/cuban-missile-crisis.png"
+},
+{
+  id: 17,
+  slug: "fall-of-berlin-wall",
+  title: "Fall of the Berlin Wall",
+  continent: "Europe",
+  country: "Germany",
+  year: 1989,
+  category: "Political",
+
+  summary:
+    "The symbolic end of Cold War divisions in Europe.",
+
+  story:
+    "Mass protests and political reforms led East Germany to open border crossings, allowing Berliners to dismantle the wall.",
+
+  causes: [
+    "Public protests",
+    "Political reforms",
+    "Economic pressures"
+  ],
+
+  consequences: [
+    "German reunification",
+    "Collapse of communist regimes",
+    "End of Cold War tensions"
+  ],
+
+  keyFigures: [
+    "Mikhail Gorbachev",
+    "Helmut Kohl"
+  ],
+
+  significance:
+    "A symbol of freedom and political change.",
+
+  interestingFacts: [
+    "Thousands gathered at the wall on the night it opened.",
+    "Pieces of the wall are displayed worldwide."
+  ],
+
+  heroImage: "/images/fall-of-berlin-wall.png"
+},
+{
+  id: 18,
+  slug: "internet-revolution",
+  title: "Internet Revolution",
+  continent: "Global",
+  country: "Global",
+  year: 1990,
+  category: "Technology",
+
+  summary:
+    "The rise of the internet transformed communication and information sharing.",
+
+  story:
+    "The development of the World Wide Web and widespread internet access reshaped business, education, entertainment, and everyday life.",
+
+  causes: [
+    "Advances in computing",
+    "Networking technology",
+    "Research collaboration"
+  ],
+
+  consequences: [
+    "Global connectivity",
+    "Digital economy",
+    "Information revolution"
+  ],
+
+  keyFigures: [
+    "Tim Berners-Lee",
+    "Vint Cerf"
+  ],
+
+  significance:
+    "Changed nearly every aspect of modern life.",
+
+  interestingFacts: [
+    "The World Wide Web launched in 1991.",
+    "Billions of people now use the internet."
+  ],
+
+  heroImage: "/images/internet-revolution.png"
+},
+{
+  id: 20,
+  slug: "chernobyl-disaster",
+  title: "Chernobyl Disaster",
+  continent: "Europe",
+  country: "Ukraine",
+  year: 1986,
+  category: "Disaster",
+
+  summary:
+    "The worst nuclear power plant accident in history.",
+
+  story:
+    "A reactor explosion released radioactive material across Europe and forced the evacuation of thousands of people.",
+
+  causes: [
+    "Reactor design flaws",
+    "Human error",
+    "Failed safety test"
+  ],
+
+  consequences: [
+    "Evacuations",
+    "Health concerns",
+    "Nuclear policy changes"
+  ],
+
+  keyFigures: [
+    "Valery Legasov",
+    "Mikhail Gorbachev"
+  ],
+
+  significance:
+    "Changed public attitudes toward nuclear power.",
+
+  interestingFacts: [
+    "The exclusion zone remains largely uninhabited.",
+    "The disaster affected multiple countries."
+  ],
+
+  heroImage: "/images/chernobyl-disaster.png"
+},
+
 ];
