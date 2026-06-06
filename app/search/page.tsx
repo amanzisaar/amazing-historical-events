@@ -35,21 +35,27 @@ export default function SearchPage() {
         <div className="mb-8 flex gap-3">
           <button
             onClick={() => setSelectedContinent("All")}
-            className="rounded-lg bg-zinc-800 px-4 py-2"
+            className={`rounded-lg px-4 py-2 ${
+              selectedContinent === "All" ? "bg-blue-600" : "bg-zinc-800"
+            }`}
           >
             All
           </button>
 
           <button
             onClick={() => setSelectedContinent("Asia")}
-            className="rounded-lg bg-zinc-800 px-4 py-2"
+            className={`rounded-lg px-4 py-2 ${
+              selectedContinent === "Asia" ? "bg-blue-600" : "bg-zinc-800"
+            }`}
           >
             Asia
           </button>
 
           <button
             onClick={() => setSelectedContinent("Europe")}
-            className="rounded-lg bg-zinc-800 px-4 py-2"
+            className={`rounded-lg px-4 py-2 ${
+              selectedContinent === "Europe" ? "bg-blue-600" : "bg-zinc-800"
+            }`}
           >
             Europe
           </button>
