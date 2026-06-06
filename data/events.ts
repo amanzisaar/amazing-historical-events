@@ -201,7 +201,7 @@ export const events: HistoricalEvent[] = [
     "France helped the colonies defeat Britain."
   ],
 
-  heroImage: "/images/american-revolution.jpg"
+  heroImage: "/images/american-revolution.png"
 },
 {
   id: 5,
@@ -243,7 +243,7 @@ export const events: HistoricalEvent[] = [
     "Factories replaced many traditional workshops."
   ],
 
-  heroImage: "/images/industrial-revolution.jpg"
+  heroImage: "/images/industrial-revolution.png"
 },
 {
   id: 6,
@@ -286,7 +286,7 @@ export const events: HistoricalEvent[] = [
     "The Romanov family was executed in 1918."
   ],
 
-  heroImage: "/images/russian-revolution.jpg"
+  heroImage: "/images/russian-revolution.png"
 },
 {
   id: 7,
@@ -329,7 +329,7 @@ export const events: HistoricalEvent[] = [
     "Trench warfare became a defining feature."
   ],
 
-  heroImage: "/images/world-war-1.jpg"
+  heroImage: "/images/world-war-1.png"
 },
 {
   id: 8,
@@ -372,6 +372,7 @@ export const events: HistoricalEvent[] = [
     "The war ended in 1945."
   ],
 
-  heroImage: "/images/world-war-2.jpg"
+  heroImage: "/images/world-war-2.png"
 },
+
 ];
