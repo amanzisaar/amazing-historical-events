@@ -18,6 +18,8 @@ export default function Navbar() {
 
         <a href="/stats">Stats</a>
 
+        <a href="/about">About</a>
+
         <Link href="/search">Search</Link>
 
         <Link href="/categories">Categories</Link>
