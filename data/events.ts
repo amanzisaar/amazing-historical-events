@@ -17,6 +17,7 @@ type HistoricalEvent = {
   significance: string;
   interestingFacts: string[];
 
+  relatedEventSlugs: string[];
   heroImage: string;
 };
 export const events: HistoricalEvent[] = [
@@ -68,6 +69,11 @@ export const events: HistoricalEvent[] = [
       "The revolution introduced the metric system.",
       "The guillotine became a symbol of the Reign of Terror.",
     ],
+    relatedEventSlugs: [
+      "american-revolution",
+      "industrial-revolution",
+      "russian-revolution",
+    ],
 
     heroImage: "/images/french-revolution.png",
   },
@@ -113,7 +119,7 @@ export const events: HistoricalEvent[] = [
       "The Ottomans used massive cannons during the siege.",
       "Constantinople later became Istanbul.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/constantinople.png",
   },
 
@@ -157,7 +163,7 @@ export const events: HistoricalEvent[] = [
       "The battle lasted less than a day.",
       "Mir Jafar's betrayal played a crucial role in the British victory.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/plassey.png",
   },
   {
@@ -196,6 +202,7 @@ export const events: HistoricalEvent[] = [
       "The Declaration of Independence was signed in 1776.",
       "France helped the colonies defeat Britain.",
     ],
+    relatedEventSlugs: ["french-revolution", "american-civil-war"],
 
     heroImage: "/images/american-revolution.png",
   },
@@ -230,7 +237,7 @@ export const events: HistoricalEvent[] = [
       "The steam engine transformed transportation.",
       "Factories replaced many traditional workshops.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/industrial-revolution.png",
   },
   {
@@ -265,7 +272,7 @@ export const events: HistoricalEvent[] = [
       "The Soviet Union emerged after the revolution.",
       "The Romanov family was executed in 1918.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/russian-revolution.png",
   },
   {
@@ -299,6 +306,7 @@ export const events: HistoricalEvent[] = [
       "More than 16 million people died.",
       "Trench warfare became a defining feature.",
     ],
+    relatedEventSlugs: ["world-war-ii", "russian-revolution"],
 
     heroImage: "/images/world-war-1.png",
   },
@@ -336,7 +344,7 @@ export const events: HistoricalEvent[] = [
       "Over 60 million people died.",
       "The war ended in 1945.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/world-war-2.png",
   },
   {
@@ -370,7 +378,7 @@ export const events: HistoricalEvent[] = [
       "The Mongol Empire became the largest contiguous empire in history.",
       "Messages could travel rapidly through a relay system.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/mongol-conquests.png",
   },
   {
@@ -407,7 +415,7 @@ export const events: HistoricalEvent[] = [
       "The samurai class lost many traditional privileges.",
       "Japan industrialized in only a few decades.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/meiji-restoration.png",
   },
   {
@@ -444,7 +452,7 @@ export const events: HistoricalEvent[] = [
       "More than 10 million people migrated.",
       "The partition occurred in the same year as independence.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/partition-of-india.png",
   },
   {
@@ -477,7 +485,7 @@ export const events: HistoricalEvent[] = [
       "Hong Kong was ceded to Britain.",
       "The wars changed East Asian politics.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/opium-wars.png",
   },
   {
@@ -510,7 +518,7 @@ export const events: HistoricalEvent[] = [
       "The war technically never ended with a peace treaty.",
       "The Demilitarized Zone still exists today.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/korean-war.png",
   },
   {
@@ -543,7 +551,7 @@ export const events: HistoricalEvent[] = [
       "Armstrong's first step was broadcast worldwide.",
       "Apollo 11 landed on July 20, 1969.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/apollo-11-moon-landing.png",
   },
   {
@@ -577,7 +585,7 @@ export const events: HistoricalEvent[] = [
       "The superpowers never fought directly.",
       "The conflict lasted over 40 years.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/cold-war.png",
   },
   {
@@ -614,7 +622,7 @@ export const events: HistoricalEvent[] = [
       "The crisis lasted 13 days.",
       "Many historians consider it the most dangerous moment of the Cold War.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/cuban-missile-crisis.png",
   },
   {
@@ -647,7 +655,7 @@ export const events: HistoricalEvent[] = [
       "Thousands gathered at the wall on the night it opened.",
       "Pieces of the wall are displayed worldwide.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/fall-of-berlin-wall.png",
   },
   {
@@ -685,61 +693,61 @@ export const events: HistoricalEvent[] = [
       "The World Wide Web launched in 1991.",
       "Billions of people now use the internet.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/internet-revolution.png",
   },
   {
-  id: 19,
+    id: 19,
 
-  slug: "american-civil-war",
+    slug: "american-civil-war",
 
-  title: "American Civil War",
+    title: "American Civil War",
 
-  continent: "North America",
+    continent: "North America",
 
-  country: "United States",
+    country: "United States",
 
-  year: 1861,
+    year: 1861,
 
-  category: "War",
+    category: "War",
 
-  summary:
-    "A devastating conflict between the Northern and Southern states that determined the future of the United States.",
+    summary:
+      "A devastating conflict between the Northern and Southern states that determined the future of the United States.",
 
-  story:
-    "The American Civil War began in 1861 after several Southern states seceded from the United States following the election of Abraham Lincoln. The Confederacy sought to preserve slavery and states' rights, while the Union fought to maintain the nation. Over four years, massive battles such as Gettysburg and Antietam caused enormous casualties. The war ended in 1865 with the defeat of the Confederacy, preserving the Union and leading to the abolition of slavery.",
+    story:
+      "The American Civil War began in 1861 after several Southern states seceded from the United States following the election of Abraham Lincoln. The Confederacy sought to preserve slavery and states' rights, while the Union fought to maintain the nation. Over four years, massive battles such as Gettysburg and Antietam caused enormous casualties. The war ended in 1865 with the defeat of the Confederacy, preserving the Union and leading to the abolition of slavery.",
 
-  causes: [
-    "Slavery",
-    "States' rights disputes",
-    "Economic differences between North and South",
-    "Election of Abraham Lincoln"
-  ],
+    causes: [
+      "Slavery",
+      "States' rights disputes",
+      "Economic differences between North and South",
+      "Election of Abraham Lincoln",
+    ],
 
-  consequences: [
-    "Abolition of slavery",
-    "Preservation of the United States",
-    "Economic destruction in the South",
-    "Beginning of Reconstruction"
-  ],
+    consequences: [
+      "Abolition of slavery",
+      "Preservation of the United States",
+      "Economic destruction in the South",
+      "Beginning of Reconstruction",
+    ],
 
-  keyFigures: [
-    "Abraham Lincoln",
-    "Ulysses S. Grant",
-    "Robert E. Lee",
-    "Jefferson Davis"
-  ],
+    keyFigures: [
+      "Abraham Lincoln",
+      "Ulysses S. Grant",
+      "Robert E. Lee",
+      "Jefferson Davis",
+    ],
 
-  significance:
-    "The war preserved the United States as a single nation and ended legal slavery, fundamentally reshaping American society.",
+    significance:
+      "The war preserved the United States as a single nation and ended legal slavery, fundamentally reshaping American society.",
 
-  interestingFacts: [
-    "More Americans died in the Civil War than in any other U.S. war.",
-    "The Battle of Gettysburg is often considered the turning point of the conflict."
-  ],
-
-  heroImage: "/images/american-civil-war.png",
-},
+    interestingFacts: [
+      "More Americans died in the Civil War than in any other U.S. war.",
+      "The Battle of Gettysburg is often considered the turning point of the conflict.",
+    ],
+    relatedEventSlugs: [],
+    heroImage: "/images/american-civil-war.png",
+  },
   {
     id: 20,
     slug: "chernobyl-disaster",
@@ -766,251 +774,217 @@ export const events: HistoricalEvent[] = [
       "The exclusion zone remains largely uninhabited.",
       "The disaster affected multiple countries.",
     ],
-
+    relatedEventSlugs: [],
     heroImage: "/images/chernobyl-disaster.png",
   },
   {
-  id: 21,
+    id: 21,
 
-  slug: "chinese-communist-revolution",
+    slug: "chinese-communist-revolution",
 
-  title: "Chinese Communist Revolution",
+    title: "Chinese Communist Revolution",
 
-  continent: "Asia",
+    continent: "Asia",
 
-  country: "China",
+    country: "China",
 
-  year: 1949,
+    year: 1949,
 
-  category: "Revolution",
+    category: "Revolution",
 
-  summary:
-    "The victory of the Chinese Communist Party that led to the creation of the People's Republic of China.",
+    summary:
+      "The victory of the Chinese Communist Party that led to the creation of the People's Republic of China.",
 
-  story:
-    "After decades of civil war, Mao Zedong's Communist forces defeated Chiang Kai-shek's Nationalists. On October 1, 1949, Mao proclaimed the People's Republic of China in Beijing, fundamentally transforming Chinese society and politics.",
+    story:
+      "After decades of civil war, Mao Zedong's Communist forces defeated Chiang Kai-shek's Nationalists. On October 1, 1949, Mao proclaimed the People's Republic of China in Beijing, fundamentally transforming Chinese society and politics.",
 
-  causes: [
-    "Chinese Civil War",
-    "Weak Nationalist government",
-    "Peasant support for Communists"
-  ],
+    causes: [
+      "Chinese Civil War",
+      "Weak Nationalist government",
+      "Peasant support for Communists",
+    ],
 
-  consequences: [
-    "Creation of the People's Republic of China",
-    "Nationalist retreat to Taiwan",
-    "Rise of communist rule"
-  ],
+    consequences: [
+      "Creation of the People's Republic of China",
+      "Nationalist retreat to Taiwan",
+      "Rise of communist rule",
+    ],
 
-  keyFigures: [
-    "Mao Zedong",
-    "Chiang Kai-shek",
-    "Zhou Enlai"
-  ],
+    keyFigures: ["Mao Zedong", "Chiang Kai-shek", "Zhou Enlai"],
 
-  significance:
-    "Created modern China and changed the global balance of power.",
+    significance:
+      "Created modern China and changed the global balance of power.",
 
-  interestingFacts: [
-    "China became the world's most populous communist state.",
-    "The Nationalist government relocated to Taiwan."
-  ],
+    interestingFacts: [
+      "China became the world's most populous communist state.",
+      "The Nationalist government relocated to Taiwan.",
+    ],
+    relatedEventSlugs: [],
+    heroImage: "/images/chinese-communist-revolution.png",
+  },
+  {
+    id: 22,
 
-  heroImage: "/images/chinese-communist-revolution.png",
-},
-{
-  id: 22,
+    slug: "sepoy-mutiny",
 
-  slug: "sepoy-mutiny",
+    title: "Indian Rebellion of 1857",
 
-  title: "Indian Rebellion of 1857",
+    continent: "Asia",
 
-  continent: "Asia",
+    country: "India",
 
-  country: "India",
+    year: 1857,
 
-  year: 1857,
+    category: "Revolution",
 
-  category: "Revolution",
+    summary: "A major uprising against British East India Company rule.",
 
-  summary:
-    "A major uprising against British East India Company rule.",
+    story:
+      "Indian soldiers known as sepoys rebelled against the East India Company. The uprising spread across northern India and became one of the most significant challenges to British rule before being suppressed.",
 
-  story:
-    "Indian soldiers known as sepoys rebelled against the East India Company. The uprising spread across northern India and became one of the most significant challenges to British rule before being suppressed.",
+    causes: [
+      "Political annexations",
+      "Religious concerns",
+      "Military grievances",
+    ],
 
-  causes: [
-    "Political annexations",
-    "Religious concerns",
-    "Military grievances"
-  ],
+    consequences: [
+      "End of East India Company rule",
+      "Direct British Crown control",
+      "Military reforms",
+    ],
 
-  consequences: [
-    "End of East India Company rule",
-    "Direct British Crown control",
-    "Military reforms"
-  ],
+    keyFigures: ["Rani Lakshmibai", "Bahadur Shah II", "Mangal Pandey"],
 
-  keyFigures: [
-    "Rani Lakshmibai",
-    "Bahadur Shah II",
-    "Mangal Pandey"
-  ],
+    significance: "Widely regarded as the First War of Indian Independence.",
 
-  significance:
-    "Widely regarded as the First War of Indian Independence.",
+    interestingFacts: [
+      "The rebellion began in Meerut.",
+      "The Mughal Empire formally ended afterward.",
+    ],
+    relatedEventSlugs: [],
+    heroImage: "/images/sepoy-mutiny.png",
+  },
+  {
+    id: 23,
 
-  interestingFacts: [
-    "The rebellion began in Meerut.",
-    "The Mughal Empire formally ended afterward."
-  ],
+    slug: "foundation-of-mughal-empire",
 
-  heroImage: "/images/sepoy-mutiny.png",
-},
-{
-  id: 23,
+    title: "Foundation of the Mughal Empire",
 
-  slug: "foundation-of-mughal-empire",
+    continent: "Asia",
 
-  title: "Foundation of the Mughal Empire",
+    country: "India",
 
-  continent: "Asia",
+    year: 1526,
 
-  country: "India",
+    category: "Empire",
 
-  year: 1526,
+    summary:
+      "Babur established the Mughal Empire after the First Battle of Panipat.",
 
-  category: "Empire",
+    story:
+      "Babur defeated Ibrahim Lodi at Panipat and established Mughal rule in India. The empire later became one of the richest and most influential states in world history.",
 
-  summary:
-    "Babur established the Mughal Empire after the First Battle of Panipat.",
+    causes: ["Babur's ambitions", "Weak Lodi rule", "Military superiority"],
 
-  story:
-    "Babur defeated Ibrahim Lodi at Panipat and established Mughal rule in India. The empire later became one of the richest and most influential states in world history.",
+    consequences: [
+      "Beginning of Mughal rule",
+      "Political unification",
+      "Cultural achievements",
+    ],
 
-  causes: [
-    "Babur's ambitions",
-    "Weak Lodi rule",
-    "Military superiority"
-  ],
+    keyFigures: ["Babur", "Ibrahim Lodi"],
 
-  consequences: [
-    "Beginning of Mughal rule",
-    "Political unification",
-    "Cultural achievements"
-  ],
+    significance: "Laid the foundation for one of India's greatest empires.",
 
-  keyFigures: [
-    "Babur",
-    "Ibrahim Lodi"
-  ],
+    interestingFacts: [
+      "Babur used field artillery effectively.",
+      "The Mughal Empire lasted more than 300 years.",
+    ],
+    relatedEventSlugs: [],
+    heroImage: "/images/foundation-of-mughal-empire.png",
+  },
+  {
+    id: 24,
 
-  significance:
-    "Laid the foundation for one of India's greatest empires.",
+    slug: "protestant-reformation",
 
-  interestingFacts: [
-    "Babur used field artillery effectively.",
-    "The Mughal Empire lasted more than 300 years."
-  ],
+    title: "Protestant Reformation",
 
-  heroImage: "/images/foundation-of-mughal-empire.png",
-},
-{
-  id: 24,
+    continent: "Europe",
 
-  slug: "protestant-reformation",
+    country: "Holy Roman Empire",
 
-  title: "Protestant Reformation",
+    year: 1517,
 
-  continent: "Europe",
+    category: "Religious",
 
-  country: "Holy Roman Empire",
+    summary: "A religious movement that transformed Christianity in Europe.",
 
-  year: 1517,
+    story:
+      "Martin Luther challenged Church practices by publishing his Ninety-Five Theses. The movement spread rapidly and led to the formation of Protestant churches.",
 
-  category: "Religious",
+    causes: [
+      "Church corruption",
+      "Religious reform movements",
+      "Printing press",
+    ],
 
-  summary:
-    "A religious movement that transformed Christianity in Europe.",
+    consequences: ["Rise of Protestantism", "Religious wars", "Church reforms"],
 
-  story:
-    "Martin Luther challenged Church practices by publishing his Ninety-Five Theses. The movement spread rapidly and led to the formation of Protestant churches.",
+    keyFigures: ["Martin Luther", "John Calvin"],
 
-  causes: [
-    "Church corruption",
-    "Religious reform movements",
-    "Printing press"
-  ],
+    significance: "One of the most influential religious movements in history.",
 
-  consequences: [
-    "Rise of Protestantism",
-    "Religious wars",
-    "Church reforms"
-  ],
+    interestingFacts: [
+      "The Ninety-Five Theses were published in 1517.",
+      "The printing press helped spread reform ideas.",
+    ],
+    relatedEventSlugs: [],
+    heroImage: "/images/protestant-reformation.png",
+  },
+  {
+    id: 25,
 
-  keyFigures: [
-    "Martin Luther",
-    "John Calvin"
-  ],
+    slug: "civil-rights-movement",
 
-  significance:
-    "One of the most influential religious movements in history.",
+    title: "American Civil Rights Movement",
 
-  interestingFacts: [
-    "The Ninety-Five Theses were published in 1517.",
-    "The printing press helped spread reform ideas."
-  ],
+    continent: "North America",
 
-  heroImage: "/images/protestant-reformation.png",
-},
-{
-  id: 25,
+    country: "United States",
 
-  slug: "civil-rights-movement",
+    year: 1954,
 
-  title: "American Civil Rights Movement",
+    category: "Political",
 
-  continent: "North America",
+    summary: "A movement to end racial segregation and discrimination.",
 
-  country: "United States",
+    story:
+      "Through protests, court cases, and civil disobedience, activists challenged racial segregation in the United States. The movement achieved major legal and social changes.",
 
-  year: 1954,
+    causes: [
+      "Racial segregation",
+      "Voting discrimination",
+      "Civil rights activism",
+    ],
 
-  category: "Political",
+    consequences: [
+      "Civil Rights Act",
+      "Voting Rights Act",
+      "Expanded equality",
+    ],
 
-  summary:
-    "A movement to end racial segregation and discrimination.",
+    keyFigures: ["Martin Luther King Jr.", "Rosa Parks", "Malcolm X"],
 
-  story:
-    "Through protests, court cases, and civil disobedience, activists challenged racial segregation in the United States. The movement achieved major legal and social changes.",
+    significance: "Transformed civil rights and equality in the United States.",
 
-  causes: [
-    "Racial segregation",
-    "Voting discrimination",
-    "Civil rights activism"
-  ],
-
-  consequences: [
-    "Civil Rights Act",
-    "Voting Rights Act",
-    "Expanded equality"
-  ],
-
-  keyFigures: [
-    "Martin Luther King Jr.",
-    "Rosa Parks",
-    "Malcolm X"
-  ],
-
-  significance:
-    "Transformed civil rights and equality in the United States.",
-
-  interestingFacts: [
-    "The Montgomery Bus Boycott lasted over a year.",
-    "The movement inspired human rights campaigns worldwide."
-  ],
-
-  heroImage: "/images/civil-rights-movement.png",
-},
-
+    interestingFacts: [
+      "The Montgomery Bus Boycott lasted over a year.",
+      "The movement inspired human rights campaigns worldwide.",
+    ],
+    relatedEventSlugs: [],
+    heroImage: "/images/civil-rights-movement.png",
+  },
 ];

@@ -12,6 +12,12 @@ export default function Navbar() {
 
         <Link href="/timeline">Timeline</Link>
 
+        <Link href="/continents">Continents</Link>
+
+        <Link href="/nations">Countries</Link>
+
+        <a href="/stats">Stats</a>
+
         <Link href="/search">Search</Link>
 
         <Link href="/categories">Categories</Link>
